@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "api/simulate-email-reply.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "api/simulate-email-reply.py" }
+  ]
+}
